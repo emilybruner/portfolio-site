@@ -1,30 +1,37 @@
 import React from 'react';
+import Home from './Home';
+import {Link} from 'react-router-dom';
 
 export default function Menu() {
     return (
-        <div class="Menu">
-  <ul class="Menu-list" data-offset="10">
-    <li class="Menu-list-item" data-offset="20" onclick>
+        <div className="menu-container">
+        <div className="Menu">
+  <ul className="Menu-list" data-offset="10">
+    <li className="Menu-list-item" data-offset="20" onclick>
       Home
-      <span class="Mask"><span>Home</span></span>
-      <span class="Mask"><span>Home</span></span>
+      <span className="Mask"><span>Home</span></span>
+      <span className="Mask"><span>Home</span></span>
     </li>
-    <li class="Menu-list-item" data-offset="16" onclick>
-      About
-      <span class="Mask"><span>About</span></span>
-      <span class="Mask"><span>About</span></span>
-    </li>
-    <li class="Menu-list-item" data-offset="12" onclick>
+    
+    <li className="Menu-list-item" data-offset="12" onclick>
       Projects
-      <span class="Mask"><span>Projects</span></span>
-      <span class="Mask"><span>Projects</span></span>
+      <span className="Mask"><span>Projects</span></span>
+      <span className="Mask"><span>Projects</span></span>
     </li>
-    <li class="Menu-list-item" data-offset="8" onclick>
+    <li className="Menu-list-item" data-offset="16" onclick>
+      About
+      <span className="Mask"><span>About</span></span>
+      <span className="Mask"><span>About</span></span>
+    </li>
+
+    <li className="Menu-list-item" data-offset="8" onclick>
       Contact
-      <span class="Mask"><span>Contact</span></span>
-      <span class="Mask"><span>Contact</span></span>
+      <span className="Mask"><span>Contact</span></span>
+      <span className="Mask"><span>Contact</span></span>
     </li>
   </ul>
+</div>
+
 </div>
     )
 }
